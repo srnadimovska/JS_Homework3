@@ -119,7 +119,7 @@ const cities = [
 
 console.log(cities);
 
-for ( i = 0; i < cities.lenght; i++) 
+for ( i = 0; i < cities.length; i++) 
 {
     console.log(cities[i].city);
 }
@@ -144,10 +144,13 @@ console.log(nopollution);
 const million = cities.filter (grad => grad.population > 1000000);
 console.log(million);
 
-var startsWithA = cities.filter((grad) => { return grad.includes("A");
+const startsWithS = cities.filter((grad) => grad.city.includes("S"));
+console.log(startsWithS);
 
-});
-console.log(startsWithA);
+avg = 0;
+cities.forEach((grad) => avg = avg + grad.population)
+console.log(avg/cities.length);
+
 
 
 
